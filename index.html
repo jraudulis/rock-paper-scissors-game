@@ -14,7 +14,7 @@
         </div>
         <!-- Player controls -->
         <div class="player-container" id="player">
-            <h2>You - <span id="player-score">0</span><span class="choice" id="player-choice"> --- Choice<span></h2>
+            <h2>You - <span id="player-score"></span><span class="choice" id="player-choice"><span></h2>
                 <i class="fa fa-regular fa-hand-back-fist" id="player-rock" title="Rock" onclick="select('rock')"></i>
                 <i class="fa fa-regular fa-hand" id="player-paper" title="Paper" onclick="select('paper')"></i>
                 <i class="fa fa-regular fa-hand-scissors" id="player-scissors" title="Scissors" onclick="select('scissors')"></i>
@@ -23,7 +23,7 @@
         </div>
         <!-- Computer controls -->
         <div class="player-container" id="computer">
-            <h2>Computer - <span id="computer-score">0</span><span class="choice" id="computer-choice"> --- Choice<span></h2>
+            <h2>Computer - <span id="computer-score"></span><span class="choice" id="computer-choice"><span></h2>
                 <i class="fa fa-regular fa-hand-back-fist" id="computer-rock" title="Rock"></i>
                 <i class="fa fa-regular fa-hand" id="computer-paper" title="Paper"></i>
                 <i class="fa fa-regular fa-hand-scissors" id="computer-scissors" title="Scissors"></i>
@@ -31,14 +31,14 @@
                 <i class="fa fa-regular fa-hand-spock" id="computer-spock" title="Spock"></i>
         </div>
         <!-- Reset icon -->
-        <i class="fa-solid fa-arrows-rotate reset-icon" id="reset-icon" title="Reset"></i>
+        <i class="fa-solid fa-arrows-rotate reset-icon" id="reset-icon" title="Reset" onclick="resetAll()"></i>
         <!-- Results container -->
          <div class="result-container">
-            <h3 class="result-text" id="resultText">You Won .. For now</h3>
+            <h3 class="result-text" id="resultText"></h3>
          </div>
     </div>
     <!-- Script -->
     <script src="https://kit.fontawesome.com/dd97c6e7cd.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
